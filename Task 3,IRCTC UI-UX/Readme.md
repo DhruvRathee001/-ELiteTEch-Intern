@@ -49,6 +49,7 @@ The goal was to reduce confusion, improve information clarity, and speed up the 
 ## 🔗 Figma File Link
 
 [🔗Figma Prototype][https://www.figma.com/proto/o2EVlbivAv6nAPRJQZo8RW/Untitled?node-id=0-1&t=2AFPf9yt6UCPYVVQ-1]
+
 [Dev Mode Link](https://www.figma.com/design/o2EVlbivAv6nAPRJQZo8RW/Untitled?node-id=0-1&t=2AFPf9yt6UCPYVVQ-1)
 
 
