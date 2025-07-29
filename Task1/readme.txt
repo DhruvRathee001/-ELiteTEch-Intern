@@ -1,19 +1,51 @@
-PROJECT: Data Pipeline Development (ETL)
+# 🚂 Project: Data Pipeline Development (ETL)
 
-TOOLS USED:
-- pandas
-- scikit-learn (Pipeline, SimpleImputer, LabelEncoder, StandardScaler)
+This project demonstrates a basic **ETL (Extract, Transform, Load)** pipeline using Python for the **Titanic dataset**.  
+The pipeline extracts the raw dataset, applies preprocessing steps, and outputs a cleaned CSV file ready for analysis or modeling.
 
-STEPS PERFORMED:
-1. Extracted raw Titanic dataset (CSV).
-2. Dropped irrelevant columns.
-3. Applied preprocessing:
-   - Filled missing numeric values with mean.
-   - Scaled numeric features.
-   - Encoded categorical values with LabelEncoder.
-4. Combined transformed features and target.
-5. Saved clean data to processed_titanic.csv
+---
 
-USAGE:
-- Run `etl_pipeline.py` using Python 3.
-- Ensure `titanic.csv` is in the same folder.
+## 🛠️ Tools & Libraries Used
+
+- `pandas` – For data manipulation and extraction
+- `scikit-learn` – For pipeline and preprocessing:
+  - `Pipeline`
+  - `SimpleImputer`
+  - `LabelEncoder`
+  - `StandardScaler`
+
+---
+
+## 🔄 ETL Steps Performed
+
+### 1. **Extract**
+- Loaded the **raw Titanic dataset** from `titanic.csv`.
+
+### 2. **Transform**
+- Dropped irrelevant columns like `Name`, `Ticket`, and `Cabin`.
+- Preprocessing steps applied:
+  - **Imputation**: Filled missing numeric values using the **mean**.
+  - **Scaling**: Standardized numeric features using `StandardScaler`.
+  - **Encoding**: Transformed categorical variables using `LabelEncoder`.
+
+### 3. **Load**
+- Merged transformed features with the target (`Survived`).
+- Saved the cleaned dataset as `processed_titanic.csv`.
+
+---
+
+## 📦 How to Use
+
+1. **Ensure Requirements**  
+   - Python 3.x  
+   - Install dependencies:  
+     ```bash
+     pip install pandas scikit-learn
+     ```
+
+2. **Place Files**  
+   - Make sure the raw `titanic.csv` file is in the **same directory** as the script.
+
+3. **Run the ETL Script**  
+   ```bash
+   python etl_pipeline.py
